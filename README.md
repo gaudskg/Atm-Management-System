@@ -20,27 +20,28 @@ This is a Django application designed to manage data of ATM sites. It allows use
 To run the application locally, follow these steps:
 
 1. Clone this repository to your local machine:
-
+```
 git clone https://github.com/gaudskg/Atm-Management-System.git
-
+```
 
 2. Navigate to the project directory:
-
+```
 cd atm-site-management
+```
 
 
 3. Update SQL Configuration: Open the settings.py file in the atm_project directory and update the database configuration under the DATABASES setting. Replace 'your_database_name', 'your_mysql_username', and 'your_mysql_password' with your actual MySQL database name, username, and password respectively. You may also need to adjust the HOST and PORT values if your MySQL server is not running on the default localhost and port 3306.
 
 4. Install dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 
 5. Apply database migrations:
-
+```
 python manage.py  makemigrations
 python manage.py migrate
-
+```
 
 6. Run the development server:
 
