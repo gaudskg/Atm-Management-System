@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container text-center">
+        <h1>Import ATM Sites Done</h1>
+        <p class="lead">The ATM sites have been successfully imported from the Excel file.</p>
+        <a href="{% url 'atm_list' %}" class="btn btn-primary">View ATM Sites</a>
+    </div>
+{% endblock %}

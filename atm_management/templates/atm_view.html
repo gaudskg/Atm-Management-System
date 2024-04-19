@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col text-center my-4">
+            <h1>ATM Details</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Name:</th>
+                        <td>{{ atm.name }}</td>
+                    </tr>
+                    <tr>
+                        <th>Site ID:</th>
+                        <td>{{ atm.site_id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <td>{{ atm.address }}</td>
+                    </tr>
+                    <tr>
+                        <th>City:</th>
+                        <td>{{ atm.city }}</td>
+                    </tr>
+                    <tr>
+                        <th>State:</th>
+                        <td>{{ atm.city.state }}</td>
+                    </tr>
+                    <tr>
+                        <th>Contact Details:</th>
+                        <td>{{ atm.contact_details }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="{% url 'atmupdate' atm.id %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'atmdelete' atm.id %}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this ATM site?');">Delete</a>
+            <a href="{% url 'atm_list' %}" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+{% endblock %}

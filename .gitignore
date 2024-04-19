@@ -1,0 +1,33 @@
+# Ignore database file
+db.sqlite3
+*.mysql
+*.sql
+*.sql.gz
+*.sql.bz2
+*.sql.xz
+
+# Ignore static and media files collected by Django
+/static/
+/media/
+
+# Ignore environment-specific settings
+.env
+
+# Ignore any compiled Python files
+*.pyc
+
+# Ignore logs and other temporary files
+/logs/
+/tmp/
+
+# Ignore migration files
+*/migrations/.py
+*/migrations/.pyc
+
+# Ignore _pycache_ directories
+**/_pycache_/
+
+# Ignore environment-specific settings
+.env
+env/
+venv/
